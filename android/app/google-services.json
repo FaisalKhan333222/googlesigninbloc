@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "592470195009",
+    "project_id": "faisalbloc-e1f76",
+    "storage_bucket": "faisalbloc-e1f76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592470195009:android:18805bb118639d86fd7fc0",
+        "android_client_info": {
+          "package_name": "com.example.faisalbloc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592470195009-gp08ucqkt3fd0qrj10ov3ifp7sse0vci.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.faisalbloc",
+            "certificate_hash": "23fdec102dde3ef9bc6dc40d9c3e95c3019a3633"
+          }
+        },
+        {
+          "client_id": "592470195009-f30nlvhdia3pul1u15qc52uf26nd6ukl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMGwnn9VUPt_9A-zguFyFWbSceCSEs7kI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592470195009-f30nlvhdia3pul1u15qc52uf26nd6ukl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
