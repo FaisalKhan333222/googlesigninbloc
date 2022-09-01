@@ -111,6 +111,16 @@ class SignInInitialUI extends StatelessWidget {
             ),
             SizedBox(
               height: 40,
+              child: ElevatedButton.icon(
+                onPressed: () {
+                  signInBloc.add(SignInWithFacebookSuccessfullyEvent());
+                },
+                icon: Icon(Icons.person),
+                label: Text('Sign iN With Facebook'),
+              ),
+            ),
+            SizedBox(
+              height: 40,
               child: GestureDetector(
                   onTap: () {
                     final signUpBloc =

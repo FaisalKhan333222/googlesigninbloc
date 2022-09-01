@@ -12,3 +12,5 @@ class SignInSuccessfullyEvent extends SignInEvent {
 }
 
 class SignInWithGoogleSuccessfullyEvent extends SignInEvent {}
+
+class SignInWithFacebookSuccessfullyEvent extends SignInEvent {}

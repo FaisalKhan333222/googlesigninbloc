@@ -27,13 +27,25 @@ class SignInScreen extends StatelessWidget {
             });
             return SizedBox();
           } else if (state is SignInWithGoogleSuccessfullyState) {
-            print('%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5');
             SchedulerBinding.instance.addPostFrameCallback((timeStamp) {
               Navigator.pushNamed(context, HomeScreen.PAGE_NAME);
             });
-            print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
             return SizedBox();
           } else if (state is SignInWithGoogleFailedState) {
+            SchedulerBinding.instance.addPostFrameCallback((timeStamp) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text(state.message.toString()),
+                ),
+              );
+            });
+            return SignInInitialUI();
+          } else if (state is SignInWithFacebookSuccessfullyState) {
+            SchedulerBinding.instance.addPostFrameCallback((timeStamp) {
+              Navigator.pushNamed(context, HomeScreen.PAGE_NAME);
+            });
+            return SizedBox();
+          } else if (state is SignInWithFacebookFailedState) {
             SchedulerBinding.instance.addPostFrameCallback((timeStamp) {
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(

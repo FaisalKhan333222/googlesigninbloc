@@ -39,6 +39,8 @@ dependencies:
   firebase_core:
   cloud_firestore:
   google_sign_in:
+  image_picker:
+  flutter_facebook_auth:
 
 dev_dependencies:
   flutter_test:

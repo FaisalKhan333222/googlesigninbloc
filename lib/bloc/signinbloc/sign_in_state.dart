@@ -24,3 +24,13 @@ class SignInWithGoogleFailedState extends SignInState {
   final String message;
   SignInWithGoogleFailedState({required this.message});
 }
+
+class SignInWithFacebookSuccessfullyState extends SignInState {
+  final UserCredential userCredential;
+  SignInWithFacebookSuccessfullyState({required this.userCredential});
+}
+
+class SignInWithFacebookFailedState extends SignInState {
+  final String message;
+  SignInWithFacebookFailedState({required this.message});
+}
